@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 對齊範例</title>
+    <style>
+     .flex-container {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        .flex-item {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+            margin: 5px;
+        }
+        .tall-container {
+            height: 300px;
+        }
+        body a {
+            padding: 20px;
+            border: 1px solid blue;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+        }
+        body a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        .flex-container-align-item{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }        
+    </style>
+</head>
+<body>
+<a href="grid.html">grid範例</a>
+<h1 style="color: red;">Flexbox範例</h1>
+<h2>justify-content 範例</h2>
+<h3 style="color: blue;">控制主軸（通常是水平軸）上的對齊方式</h3>
+<h2>justify-content: flex-start</h2>
+<div class="flex-container" style="justify-content: flex-start;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+<h2>justify-content: flex-end</h2>
+<div class="flex-container" style="justify-content: flex-end;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+<h2>justify-content: center</h2>
+<div class="flex-container" style="justify-content: center;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+<h2>justify-content: space-between</h2>
+<div class="flex-container" style="justify-content: space-between;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+<h2>justify-content: space-around</h2>
+<div class="flex-container" style="justify-content: space-around;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+<h2>justify-content: space-evenly</h2>
+<div class="flex-container" style="justify-content: space-evenly;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+
+<h2>align-items 範例</h2>
+<h3 style="color: blue;">控制交叉軸上的單行內容對齊方式</h3>
+<h2>align-items: flex-start</h2>
+<div class="flex-container-align-item" style="align-items: flex-start;">
+    <div class="flex-item" style="height: 60px;"></div>
+    <div class="flex-item" style="height: 60px;"></div>
+    <div class="flex-item" style="height: 60px;"></div>
+</div>
+<h2>align-items: flex-end</h2>
+<div class="flex-container-align-item" style="align-items: flex-end;">
+    <div class="flex-item" style="height: 60px;"></div>
+    <div class="flex-item" style="height: 60px;"></div>
+    <div class="flex-item" style="height: 60px;"></div>
+</div>
+<h2>align-items: flex-center</h2>
+<div class="flex-container-align-item" style="align-items: center;">
+    <div class="flex-item" style="height: 60px;"></div>
+    <div class="flex-item" style="height: 60px;"></div>
+    <div class="flex-item" style="height: 60px;"></div>
+</div>
+<h2>align-items: baseline</h2>
+<div class="flex-container-align-item" style="align-items: baseline;">
+    <div class="flex-item" style="height: 60px;"></div>
+    <div class="flex-item" style="height: 60px;"></div>
+    <div class="flex-item" style="height: 60px;"></div>
+</div>
+<h2>align-items: stretch</h2>
+<div class="flex-container-align-item" style="align-items: stretch;">
+    <div class="flex-item" style="height: 60px;"></div>
+    <div class="flex-item" style="height: 60px;"></div>
+    <div class="flex-item" style="height: 60px;"></div>
+</div>
+
+<h2>align-content 範例</h2>
+<h3 style="color: blue;">控制交叉軸（通常是垂直軸）上的多行內容對齊方式</h3>
+<h2> align-content: flex-start</h2>
+<div class="flex-container tall-container" style="flex-wrap: wrap; align-content: flex-start;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+<h2> align-content: flex-end</h2>
+<div class="flex-container tall-container" style="flex-wrap: wrap; align-content: flex-end;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+<h2> align-content: center</h2>
+<div class="flex-container tall-container" style="flex-wrap: wrap; align-content: center;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+<h2> align-content: space-between</h2>
+<div class="flex-container tall-container" style="flex-wrap: wrap; align-content: space-between;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+<h2> align-content: space-around</h2>
+<div class="flex-container tall-container" style="flex-wrap: wrap; align-content: space-around;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+<h2> align-content: space-evenly</h2>
+<div class="flex-container tall-container" style="flex-wrap: wrap; align-content: space-evenly;">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+
+</body>
+</html>
